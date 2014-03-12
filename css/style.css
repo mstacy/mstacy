@@ -408,7 +408,7 @@ section {
 	background: rgba(0,0,0,.8);
 	bottom: 0;
 	left: 0;
-	padding: 15px 0;
+	padding: 15px 0 35px;
 	position: absolute;
 	width: 100%;
 	z-index: 10;
@@ -441,7 +441,7 @@ section {
 
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
-	bottom: 15px;
+	bottom: 5px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
