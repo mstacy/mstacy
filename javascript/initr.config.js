@@ -60,23 +60,20 @@
 			}
 		},
 
-		// Url Field Handler
+		// Form Handler
 		{
-			selector : '[data-bvalidator*="url"]',
+			selector : '[data-plugin="form-handler"]',
 			init : function( $els, dep ) {
-				$els.on('focusin', function () {
-					var $this = $(this);
+				$els.on('submit', function(e) {
+					var $this = $(this),
+						data = $this.data('bValidator');
 
-                    if($this.val() === '') {
-                    	$this.val('http://');
-                    }
-                }).on('focusout', function () {
-                	var $this = $(this);
+					e.preventDefault();
 
-                    if($this.val() === 'http://') {
-                    	$this.val('');
-                    }
-                });
+					if ( data && data.isValid() ) {
+						$this.html('<p>Sorry, just showing off a form, but try the email just to the right. :D</p>');
+					}
+				});
 			}
 		},
 

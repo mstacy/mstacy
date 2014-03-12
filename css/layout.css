@@ -64,6 +64,10 @@
 		height: 500px;
 	}
 
+	.hero .caption h2 {
+		margin-bottom: 10px;
+	}
+
 	#about .col-sm-4 {
 		height: inherit;
 	}
