@@ -269,6 +269,8 @@
             src : 'vendor/jquery.bxslider.min.js',
             selector : '[data-plugin="bxslider"]',
             defaults : {
+            	auto: true,
+            	autoStart: true,
             	speed: 1E3,
             	slideWidth: 1200,
             	oneToOneTouch: !1,
